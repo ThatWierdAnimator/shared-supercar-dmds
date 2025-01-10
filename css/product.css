@@ -8,11 +8,15 @@ main {
 div.image {
     width: 25%;
     height: 500px;
-    background-image: url(/images/merch/supershirt.jpg);
     background-size: cover;
 
     margin-right: 200px;
     box-shadow: 20px 20px var(--main);
+}
+
+/* To change the image for the product page, copy the code below and change the image url, and the class tag */
+.supershirt {
+    background-image: url(/images/merch/supershirt.jpg);
 }
 
 main section {
