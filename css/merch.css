@@ -1,9 +1,10 @@
 header {
   background-image: url(/images/merch/merch-hero-img.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 
   height: 645px;
+
 
   display: flex;
   flex-direction: column;
