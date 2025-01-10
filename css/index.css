@@ -1,0 +1,284 @@
+body {
+  overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    height: 700px;
+
+    border-bottom: 3px solid var(--main);
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 700px;
+    width: 100vw;
+
+    background-size: cover;
+
+    position: absolute;
+
+    transition: all 1.5s ease-in-out;
+    transform: translateX(100%);
+
+    z-index: 0;
+}
+
+header h1 {
+    font-size: 4em;
+    text-shadow: 5px 3px black;
+
+    z-index: 1;
+}
+
+header section:last-of-type {
+    transform: translateX(-100%);
+}
+
+header section:first-of-type {
+    transform: translateX(0);
+}
+
+header section.nemesis {
+    background-image: url(/images/header.jpg);
+    background-position: center;
+}
+
+header section.store {
+    background-image: url(/images/store-preview.jpg);
+    background-position: top;
+}
+
+header section.config {
+    background-image: url(/images/configure-hero-image.jpg);
+    background-position: 50% 70%;
+}
+
+header section.about {
+    background-image: url(/images/about-us-hero-image.jpg);
+    background-position: bottom;
+}
+
+header section.black-widow {
+    background-image: url(/images/black-widow-hero-image.jpg);
+    background-position: center;
+}
+
+/* I did not make any of this button code, look at example 57 on https://getcssscan.com/css-buttons-examples */
+.button-1 {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  color: var(--text);
+  display: inline-block;
+  font-size: 1.75em;
+  font-family: 'Poppins', sans-serif;
+  line-height: 15px;
+  padding: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--main);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: border-color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.button-1 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-1 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 38%;
+}
+
+.button-1:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+}
+
+.button-1:hover {
+  border-color: var(--main);
+}
+
+.button-1:hover:after,
+.button-1:focus:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-1:hover span:last-child,
+.button-1:focus span:last-child {
+  font-family: 'Poppins', sans-serif;
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+/* These are the arrow buttons */
+header button.arrow-button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+
+  margin: 15% 10px 0;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+header button.button-left {
+  float: left;
+}
+
+header button.button-right {
+  float: right;
+}
+
+/* Change color when hovering over arrow */
+header button.arrow-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+div.cars {
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.cars section {
+  width: 40%;
+}
+
+div.cars section img {
+  width: 100%;
+  height: 70%;
+
+  border: 2px solid var(--main);
+}
+
+div.cars section h2 {
+  font-size: 2em;
+}
+
+div.cars p {
+  font-size: 1.25em;
+}
+
+aside {
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top: 2px solid var(--main);
+  border-bottom: 2px solid var(--main);
+
+  height: 200px;
+  background-image: url(/images/nemesis-interior.jpg);
+
+  margin-top: 2.5%;
+}
+
+aside h2 {
+  font-size: 2em;
+
+  text-shadow: 2px 2px black;
+  margin-bottom: 1%;
+}
+
+aside p {
+  width: 70%;
+}
+
+div.not-cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  height: 500px;
+  margin: 50px 100px 0;
+}
+
+div.not-cars section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  width: 50%;
+  height: 100%;
+
+  margin-left: 70px;
+}
+
+div.not-cars h2 {
+  font-size: 2em;
+}
+
+div.not-cars p {
+  font-size: 1.25em;
+}
+
+div.not-cars button {
+  margin-top: 11%;
+}
+
+div.merch-image {
+  background-image: url(/images/merch/polo_1.jpg);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+div.about-us-image {
+  background-image: url(/images/about-us-image.jpg);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+main div:last-of-type {
+  flex-direction: row-reverse;
+}
+
+main div:last-of-type section {
+  margin-left: 0;
+}
+
+main div:last-of-type div {
+  margin-left: 70px;
+}
+
+main div:last-of-type button {
+  margin-top: 17.6%;
+}
+
+main {
+  margin-bottom: 100px;
+}

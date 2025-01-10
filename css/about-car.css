@@ -1,0 +1,111 @@
+header {
+    background-size: cover;
+
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    border-bottom: 2px solid var(--main);
+    padding-left: 50px;
+}
+
+header.nemesis {
+    background-image: url(/images/orange-interior-render.jpg);
+    background-position: 0;
+}
+
+header.black-widow {
+    background-image: url(/images/black-widow.png);
+    background-position: 50% 15%;
+}
+
+main h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0;
+}
+
+main h1 {
+    font-size: 4em;
+    font-weight: 600;
+    width: 50%;
+    margin: 0;
+    line-height: 75px;
+}
+
+main li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 0;
+}
+
+main li span:first-child {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+main aside {
+    height: 500px;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    border-top: 3px solid var(--main);
+    border-bottom: 3px solid var(--main);
+}
+
+aside.nemesis {
+    background-image: url(/images/nemesis-orange.png);
+}
+
+aside.black-widow {
+    background-image: url(/images/black-widow2.png);
+    background-position: 50% 0;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main section:nth-of-type(even) {
+    flex-wrap: wrap-reverse;
+    transform: translateX(100%);
+    text-align: left;
+}
+
+main section img {
+    height: 500px;
+}
+
+main h2 {
+    font-size: 3em;
+    width: 50%;
+}
+
+main section p {
+    font-size: 1.25em;
+    padding-right: 100px;
+}
+
+main section:nth-of-type(even) p {
+    padding-left: 100px;
+}
+
+main section:nth-of-type(even) h2 {
+    transform: translateX(-78%);
+}

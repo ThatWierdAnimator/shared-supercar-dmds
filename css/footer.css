@@ -1,0 +1,115 @@
+/* Styles the container */
+footer {
+    background-color: var(--background);
+    
+    height: 200px;
+    margin: 0;
+
+    border-top: 3px solid var(--main);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles the big list */
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 20px;
+}
+
+/* Styles sub-lists */
+footer ul li ul {
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Floats all links to the left (similar to flex-start) */
+footer li {
+    float: left;
+    width: 100px;
+    text-align: left;
+}
+
+footer li.about {
+    text-align: center;
+}
+
+/* First links are bolded */
+footer li a {
+    font-weight: var(--bold);
+}
+
+/* Sub-links are lighter-weight */
+footer li ul li a {
+    font-weight: var(--normal);
+}
+
+footer ul li ul li {
+    /* All sub-links aren't floated */
+    float: none;
+
+    text-align: left;
+    width: 100%;
+}
+
+/* Styles links */
+footer a {
+    text-decoration: none;
+    color: var(--text);
+
+    white-space: nowrap;
+}
+
+/* Highlights links in focus */
+footer a:hover,
+footer a:focus {
+    color: var(--text-highlight);
+}
+
+/* The copyright text */
+footer p {
+    color: var(--text);
+    font-weight: var(--normal);
+    font-size: 1em;
+    padding-left: 20px;
+}
+
+/* Holds the copyright and links together so you don't need a transform property */
+footer .links-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: 1%;
+    width: 50%;
+}
+
+/* Social media text */
+footer h3 {
+    color: var(--text);
+    font-weight: var(--bold);
+
+    margin-left: 20px;
+}
+
+/* Social media section */
+footer section:last-of-type {
+    float: right;
+    margin-right: 2%;
+}
+
+/* Social media list */
+footer section:last-of-type ul {
+    margin: 0;
+}
+
+/* Social media icons */
+footer img {
+    width: 50px;
+}
+
+/* The list items in for the social media */
+footer section:last-of-type li {
+    width: 60px;
+}

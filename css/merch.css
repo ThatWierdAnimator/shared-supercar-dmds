@@ -1,0 +1,169 @@
+header {
+  background-image: url(/images/merch/merch-hero-img.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 645px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 4em;
+  text-shadow: 3px 3px black;
+}
+
+main section h2 {
+  font-size: 2.5em;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+button {
+  z-index: 15;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+
+  margin-left: 50px;
+  height: 50px;
+  border: none;
+
+  transition: filter 0.25s ease-in-out;
+}
+
+button:not(.active) {
+  filter: invert(69%) saturate(12%) hue-rotate(192deg) brightness(89%) contrast(90%);
+}
+
+#carousel {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 90000vw;
+  margin-left: 30px;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.product {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 500px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.product h3 {
+  text-shadow: 3px 3px black;
+
+  font-size: 2em;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.product h3.black {
+  color: black;
+  text-shadow: 3px 3px lightgrey;
+}
+
+#men-polo {
+  background-image: url(/images/merch/polo_1.jpg);
+}
+
+#sweater {
+  background-image: url(/images/merch/sweater.jpg);
+}
+
+#beanie {
+  background-image: url(/images/merch/beanie.png);
+}
+
+#shirt {
+  background-image: url(/images/merch/shirt.jpg);
+}
+
+#super-shirt {
+  background-image: url(/images/store-preview.jpg);
+}
+
+aside {
+  border-top: 3px solid var(--main);
+  border-bottom: 3px solid var(--main);
+  background-image: url(/images/merch/polo-close-up.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+aside h3 {
+  font-size: 2.5em;
+  text-shadow: 3px 3px black;
+}
+
+aside p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+  font-size: 1.25em;
+
+  margin-top: 0;
+}
+
+div.sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+div.sections section {
+  background-color: grey;
+
+  height: 450px;
+  width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  cursor: pointer;
+}
+
+div.sections section h3 {
+  font-size: 2em;
+  padding-right: 30px;
+  margin-bottom: 15px;
+
+  text-shadow: 3px 3px black;
+}
+
+div.sections section.clothes h3 {
+  color: black;
+  text-shadow: 3px 3px lightgrey
+}
+
+section.clothes {
+  background-image: url(/images/merch/shirt.jpg);
+  background-size: cover;
+}
+
+section.models {
+  background-image: url(/images/merch/models.jpg);
+  background-size: cover;
+}

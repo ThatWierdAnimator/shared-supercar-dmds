@@ -1,0 +1,60 @@
+main {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+div.image {
+    width: 25%;
+    height: 500px;
+    background-image: url(/images/merch/supershirt.jpg);
+    background-size: cover;
+
+    margin-right: 200px;
+    box-shadow: 20px 20px var(--main);
+}
+
+main section {
+    width: 35%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 0;
+}
+
+button {
+    font-family: 'Poppins';
+    font-size: 2em;
+    font-weight: var(--bold);
+    color: white;
+    background-color: var(--main);
+    border: none;
+    padding: 7.5px 60px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--main-highlight);
+}
+
+button.cart {
+    background-color: transparent;
+    transform: translateY(14px);
+    padding: 0;
+    margin-left: 60px;
+}
+
+button.cart:hover {
+    background-color: black;
+}
+
+main section h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+main section p:last-of-type {
+    line-height: 50px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/icons/trion_icon.png">
+    <title>Home | TRION</title>
+</head>
+<body>
+    <nav>
+        <!-- List of links -->
+        <ul class="left large-nav">
+            <!-- The Home link is an image -->
+            <li class="logo"><a href="index.html"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a></li>
+            <li><a href="html/merch.html">Merch</a></li>
+            <li><a href="html/models.html">Models</a>
+                <ul class="sublist">
+                   <li><a href="html/nemesis.html">Nemesis</a></li>
+                    <li><a href="html/black-widow.html">Black Widow</a></li>
+                </ul>
+            </li>
+            <li><a href="html/about.html">About</a></li>
+        </ul>
+        <!-- This is a seperate list because these links are floated to the right -->
+        <ul class="right large-nav">
+            <li><a href="html/cart.html"><img src="images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
+            <li><a href="html/account.html"><img src="images/icons/user_icon.png" alt="Account"></a></li>
+            <li><a href="html/config.html" class="customize">Customize</a></li>
+        </ul>
+        <!-- This is the hamburger menu icon -->
+        <a href="index.html" class="small-nav"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a>
+        <!-- This links to the navbar.js file when the menu is clicked, this revels the menu -->
+        <a href="javascript:void(0);" class="icon small-nav" onclick="reveal()">
+            <img src="images/icons/hamburger-menu.png" alt="menu">
+        </a>
+        <div class="links" id="links">
+            <a href="html/merch.html">Merch<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="html/models.html">Models<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="html/about.html">About<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="html/config.html">Customize<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="html/cart.html">Cart<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="html/account.html">Account<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+        </div>
+    </nav>
+    <main>
+        <!-- This header is just the image gallery -->
+        <header>
+            <!-- Each of these sections is one slide in the carousel -->
+            <section class="header black-widow">
+                <h1>Discover the Black Widow</h1>
+                <button class="button-1" onclick="location.href='html/black-widow.html';"><span class="text">Black Widow</span><span>Black Widow</span></button>
+            </section>
+            <section class="header nemesis active">
+                <h1>Unleash the Nemesis</h1>
+                <button class="button-1" onclick="location.href='html/nemesis.html';"><span class="text">Trion Nemesis</span><span>Trion Nemesis</span></button>
+            </section>
+            <section class="header store">
+                <h1>Trion Store</h1>
+                <button class="button-1" onclick="location.href='html/merch.html';"><span class="text">Shop</span><span>Shop</span></button>
+            </section>
+            <section class="header config">
+                <h1>Be in Charge of your Future</h1>
+                <button class="button-1" onclick="location.href='html/config.html';"><span class="text">Customize</span><span>Customize</span></button>
+            </section>
+            <section class="header about">
+                <h1>Meet the Trion Team</h1>
+                <button class="button-1" onclick="location.href='html/about.html';"><span class="text">About Us</span><span>About Us</span></button>
+            </section>
+            <!-- Those onClick attributes link to slidwshow.js and move the slides (-1 is left one and +1 is right one) -->
+            <button class="arrow-button button-left" onclick="plusSlides(-1)"><img src="images/icons/left-arrow-black.svg" alt="left arrow" width="30"></button>
+            <button class="arrow-button button-right" onclick="plusSlides(1)"><img src="images/icons/right-arrow-black.svg" alt="right arrow" width="30"></button>
+        </header>
+        <!-- This cars div holds the sections and "click here!" things for the cars, we need a div for flexbox to work -->
+        <div class="cars">
+            <section class="nemesis-section">
+                <img src="images/nemesis.png" alt="Nemesis GT">
+                <h2>Nemesis GT</h2>
+                <p>Discover new adventures with the Nemesis GT</p>
+                <button class="button-1" onclick="location.href = 'html/nemesis.html'">View More<span>View More</span></button>
+            </section>
+            <section class="black-widow-section">
+                <img src="images/black-widow.png" alt="Black Widow">
+                <h2>Black Widow</h2>
+                <p>Discover new adventures with the black widow</p>
+                <button class="button-1" onclick="location.href = 'html/black-widow.html'">View More<span>View More</span></button>
+            </section>
+        </div>
+        <!-- This is the bar that seperates the top and bottom of the page -->
+        <aside>
+            <h2>Welcome to Trion</h2>
+            <p>At Trion Motors, we don’t just build supercars; we build an experience. Our vision goes beyond the vehicle, it’s about creating a community of passionate individuals who share a love for innovation, performance, and luxury</p>
+        </aside>
+        <!-- These are articles that also have an image, header, text, and call to action, but aren't cars, so they're structured differently -->
+        <div class="not-cars">
+            <!-- There is a div instead of an img tag here because background images have background-position cover, while img tags don't -->
+            <div class="merch-image"></div>
+            <section>
+                <h2>Merchandise</h2>
+                <p>Step into the world of luxury, performance, and innovation. Here, you’ll find exclusive apparel, accessories, and gear that embody the spirit of Trion where power, precision, and passion meet. Whether you’re a car enthusiast or a Trion driver, our collection is designed to bring the thrill of the road to your everyday life. <br> <br> Browse our curated selection and take a piece of Trion with you, wherever you go. Welcome to the drive of a lifetime!</p>
+                <button class="button-1" onclick="location.href = 'html/merch.html'">Discover More<span>Discover More</span></button>
+            </section>
+        </div>
+        <div class="not-cars">
+            <div class="about-us-image"></div>
+            <section>
+                <h2>About Us</h2>
+                <p>At Trion, we don’t just build supercars—we craft automotive masterpieces that redefine the driving experience. With a relentless pursuit of performance, innovation, and design, we push the boundaries of what’s possible on the road. Every Trion vehicle is engineered to deliver unmatched power, precision, and luxury, all while maintaining a commitment to sustainability and cutting-edge technology.</p>
+                <button class="button-1" onclick="location.href = 'html/about.html'">Discover More<span>Discover More</span></button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <!-- This div is here to use flexbox to position these items -->
+        <div class="links-copyright">
+            <ul>
+                <li><a href="html/models.html">Models</a>
+                    <ul>
+                        <li><a href="html/nemesis.html">Nemesis</a></li>
+                        <li><a href="html/black-widow.html">Black Widow</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/config.html">Customize</a></li>
+                <li class="about"><a href="html/about.html">About</a></li>
+                <li><a href="html/merch.html">Merch Store</a></li>
+            </ul>
+            <p>Copyright © Trion Supercars 2024</p>
+        </div>
+        <!-- This is seperate because its positioned to the right of the above items -->
+        <section>
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/richard.patterson.9041/" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/trionsupercarsgroup/" target="_blank"><img src="images/icons/instagram.png" alt="Facebook"></a></li>
+                <li><a href="https://x.com/trionsupercars" target="_blank"><img src="images/icons/twitter.png" alt="Facebook"></a></li>
+                <li><a href="https://www.youtube.com/@trionsupercars2629/featured" target="_blank"><img src="images/icons/youtube.png" alt="Facebook"></a></li>
+            </ul>    
+        </section>
+    </footer>
+    <!-- This links to the navbar.js and slideshow.js files -->
+    <script src="js/navbar.js"></script>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+main {
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin-left: 70px;
+  font-size: 3.75em;
+  margin-bottom: 0;
+}
+
+.product {
+  display: flex;
+  border: 2px solid var(--text);
+  margin: 0 75px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.product section {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+button {
+  font-family: 'Poppins';
+  font-size: 1.5em;
+  padding: 5px 30px;
+  margin-top: 30px;
+  background-color: var(--main);
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+
+button:hover {
+  background-color: var(--main-highlight);
+}
+
+button.checkout {
+  margin-left: 75px;
+  font-size: 2em;
+}

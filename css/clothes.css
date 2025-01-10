@@ -1,0 +1,66 @@
+h1 {
+    font-size: 3em;
+    padding-left: 50px;
+    padding-top: 25px;
+
+    margin-bottom: 0;
+}
+
+main div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin-bottom: 50px;
+}
+
+main section {
+    background-color: grey;
+    min-width: 300px;
+    flex-basis: 500px;
+    height: 500px;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    cursor: pointer;
+
+    background-size: cover;
+}
+
+main section h2 {
+    text-shadow: 3px 3px black;
+
+    font-size: 2em;
+    padding-right: 25px;
+    margin-bottom: 12.5px;
+}
+
+main section h2.black {
+    color: black;
+    text-shadow: 3px 3px lightgrey;
+}
+
+#jacket {
+    background-image: url(/images/merch/jacket.jpg);
+}
+
+#beanie {
+    background-image: url(/images/merch/beanie.png);
+}
+
+#polo {
+    background-image: url(/images/merch/polo_1.jpg);
+}
+
+#supershirt {
+    background-image: url(/images/merch/supershirt.jpg);
+}
+
+#normal-shirt {
+    background-image: url(/images/merch/normal-shirt.jpg);
+}
