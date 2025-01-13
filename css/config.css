@@ -18,21 +18,31 @@ h3 {
     font-weight: var(--normal);
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
 }
 
 main ul {
-    display: flex;
+    display: none;
     list-style: none;
     margin: none;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding: 0;
 }
 
 main ul button {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     margin: 0 10px 0 0;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+    cursor: pointer;
 }
 
 .dropdown {
@@ -50,9 +60,42 @@ main ul button {
 }
 
 .dropdown:checked + h3 + ul {
-    display: block;
+    display: flex;
 }
 
 span img {
     transform: translateY(2.5px);
+}
+
+.orange {
+    background-color: orange;
+}
+
+.orange:hover {
+    background-color: rgb(255, 119, 0);
+}
+
+.white {
+    background-color: white;
+}
+
+.white:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue:hover {
+    background-color: rgb(7, 0, 198);
+}
+
+.black {
+    background-color: black;
+    border: 2px solid white;
+}
+
+.black:hover {
+    background-color: rgb(46, 46, 46);
 }
