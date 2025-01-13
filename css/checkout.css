@@ -68,6 +68,7 @@ button {
 
     width: 40%;
     height: 395px;
+    margin-left: 50px;
 
     margin-right: 50px;
 }
@@ -94,4 +95,11 @@ button {
     padding-left: 50px;
     width: 50%;
     color: grey;
+}
+
+button:hover{
+    background-color: black;
+}
+section.details{
+    
 }
