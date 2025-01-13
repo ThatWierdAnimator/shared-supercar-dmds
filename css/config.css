@@ -1,99 +1,58 @@
-/* Car Configurator Section */
-.configurator {
-    padding: 6rem 2rem;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-}
-
-.configurator-container {
+main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
-    max-width: 1400px;
-    width: 100%;
+    height: calc(100vh - 100px);
 }
 
-.car-image {
-    flex: 2;
-    position: relative;
+.menu {
+    border-left: 3px solid var(--main);
+    width: 30%;
+    padding: 0 30px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-weight: var(--normal);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.car-img {
-    max-width: 100%;
-    max-height: 500px;
-    transition: transform 0.5s ease-in-out;
-}
-
-.configurator-options {
-    flex: 1;
+main ul {
     display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+    list-style: none;
+    margin: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-.option-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+main ul button {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px 0 0;
 }
 
-.option-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.color-buttons,
-.wheel-buttons,
-.roof-buttons {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.color-btn,
-.wheel-btn,
-.roof-btn {
-    border: none;
+.dropdown {
+    z-index: 3;
+    width: 625px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
     cursor: pointer;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
+    opacity: 0;
 }
 
-.color-btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ccc;
+.dropdown:checked + h3 span img {
+    content: url(/images/icons/minus-circle.svg);
 }
 
-.color-btn:hover,
-.wheel-btn:hover,
-.roof-btn:hover {
-    background-color: #f39c12;
-    transform: scale(1.1);
+.dropdown:checked + h3 + ul {
+    display: block;
 }
 
-.wheel-btn,
-.roof-btn {
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    padding: 15px 25px;
+span img {
+    transform: translateY(2.5px);
 }
-
-.wheel-btn:focus,
-.roof-btn:focus {
-    outline: none;
-    border: 2px solid #f39c12;
-}
-
