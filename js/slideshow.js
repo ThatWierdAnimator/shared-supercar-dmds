@@ -46,7 +46,7 @@ function showSlides(n) {
 
       // Bring all slides to the right (no transition so it happens immediately)
       for (i = 0; i < slides.length; i++) {
-        slides[i].style.transition = "none"
+        slides[i].style.transition = "none";
         slides[i].style.display = "flex";
         slides[i].style.transform = "translateX(100%)";
       }
