@@ -47,27 +47,38 @@
     </nav>
     <main>
         <div class="current-car">
-            <div class="rims"></div>
-            <div class="body"></div>
+            <div class="car-body" id="car-body"></div>
+            <div class="rims" id="rims"></div>
         </div>
-        <section class="menu">
-            <h2>Exterior</h2>
-            <input type="checkbox" class="dropdown">
-            <h3>Body Color<span><img src="/images/icons/plus-circle.svg" alt="plus sign" class="plus"></span></h3>
-            <ul class="body-color">
-                <li><button class="color orange"></button></li>
-                <li><button class="color white"></button></li>
-                <li><button class="color blue"></button></li>
-                <li><button class="color black"></button></li>
-            </ul>
-            <input type="checkbox" class="dropdown">
-            <h3>Rim Color<span><img src="/images/icons/plus-circle.svg" alt="plus sign" class="plus"></span></h3>
-            <ul class="rim-color">
-                <li><button class="color red"></button></li>
-                <li><button class="color blue"></button></li>
-                <li><button class="color yellow"></button></li>
-                <li><button class="color black"></button></li>
-            </ul>
-        </section>
+        <div class="menu">
+            <section>
+                <h2>Exterior</h2>
+                <input type="checkbox" class="dropdown">
+                <h3>Body Color<span><img src="/images/icons/plus-circle.svg" alt="plus sign" class="plus"></span></h3>
+                <ul class="body-color">
+                    <li><button class="color orange" onclick="changeBody('orange')"></button></li>
+                    <li><button class="color white" onclick="changeBody('white')"></button></li>
+                    <li><button class="color blue" onclick="changeBody('blue')"></button></li>
+                    <li><button class="color black" onclick="changeBody('black')"></button></li>
+                </ul>
+                <hr>
+                <input type="checkbox" class="dropdown">
+                <h3>Rim Color<span><img src="/images/icons/plus-circle.svg" alt="plus sign" class="plus"></span></h3>
+                <ul class="rim-color">
+                    <li><button class="color red" onclick="changeRims('red')"></button></li>
+                    <li><button class="color blue" onclick="changeRims('blue')"></button></li>
+                    <li><button class="color yellow" onclick="changeRims('yellow')"></button></li>
+                    <li><button class="color magenta" onclick="changeRims('magenta')"></button></li>
+                    <li><button class="color devil-red" onclick="changeRims('devil-red')"></button></li>
+                </ul>
+                <hr>
+            </section>
+            <div class="buttons">
+                <button onclick="location.href='../index.html'">Save and Go Home</button>
+                <button onclick="location.href='/html/contact.html'">Save and Contact</button>
+            </div>
+        </div>
     </main>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/config.js"></script>
 </html>
