@@ -11,12 +11,12 @@ header {
 }
 
 header.nemesis {
-    background-image: url(/images/orange-interior-render.jpg);
+    background-image: url(/images/orange-interior-render.png);
     background-position: 0;
 }
 
 header.black-widow {
-    background-image: url(/images/black-widow.png);
+    background-image: url(/images/Black-Widow.png);
     background-position: 50% 15%;
 }
 
