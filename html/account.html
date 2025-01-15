@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="css/account.css">
     <link rel="icon" href="/images/icons/trion_icon.png">
-    <!-- this is a link for the log out button
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    -->
     <title>My Account | TRION</title>
 </head>
+
 <body>
+
+    <!--start of nav bar-->
 
     <nav>
         <!-- List of links -->
@@ -50,88 +51,124 @@
         </div>
     </nav>
 
-    <!--This is for the hamburger menu-->
-    <div class="menu-open">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!--end of nav bar-->
+
+    <!--start of sidebar-->
+
+    <div class="sidebar">
+        <h2>My Account</h2>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <span>My Account</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span>Orders</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span>Wishlist</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span>Personal Data</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span>Addressess</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span>Payments</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span>Concierge</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span>Configurations</span>
+                </a>
+            </li>
+        </ul>
     </div>
 
-    <nav class="nav">
-        <div class="menu-close">
-            <span></span>
-            <span></span>
-        </div>
+    <!--end of nav bar-->
 
-        <ul>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Personal Data</a></li>
-            <li><a href="#">Addresses</a></li>
-            <li><a href="#">Payments</a></li>
-            <li><a href="#">Payments</a></li>
-            <li><a href="#">Conceirge</a></li>
-            <li>Log Out</li>
-        </ul>
-    </nav>
+    <!--start of main content-->
 
-    <script src="js/account.js"></script>
+    <div class="main">
+        <h4>My Account</h4>
+        <h3>Welcome, </h3>
+        <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+        </button>
 
-    <!--End of hamburger menu-->
-    
-    <h4>My Account</h4>
-    <h3>Welcome, </h3>
-    <!-- this is the log out button mentioned previously
-    <button type="button" class="btn btn-default btn-sm">
-        <span class="glyphicon glyphicon-log-out"></span> Log out
-    </button>
-    -->
-    <hr>
-    <h2>Orders</h2>
-        <p>You don't currently have any orders.<br> Once you have checked out, you can view and track you order here.</p>
-        
-    <hr>
-    <h2>Wishlist</h2>
-    <p style="text-align:left;">
-        Your wishlist is empty.<br> Add all your favorites to this Wish List.
-        <span style="float:right;">
-            <u>Shop What's New</u>
-        </span>
-    </p>
-        
-    <hr>
-    <h2>Personal Data</h2>
-            <p align="right"><u>Edit Personal Data</u></p>
-        
-    <hr>
-    <h2>Addresses</h2>    
-        <p>Enter an address for a quicker shopping experience</p> 
-        <p align="right"><u>Add an Address</u></p>
-        
-    <hr>
-    <h2>Payments</h2>
-        <p>Make checkout faster. Enter and manage credit cards.</p>
-        <p align="right"><u>Add a Credit Cart</u></p>
-        
-    <hr>
-    <h3>Ask our Customer Care</h3>
-    <h2>Please click here</h2>
-    <p>Customer Care:<br> 10:00AM - 6:00PM PST</p>
+        <hr>
+        <h2>Orders</h2>
+            <p>You don't currently have any orders.<br> Once you have checked out, you can view and track you order here.</p>
+            
+        <hr>
+        <h2>Wishlist</h2>
+        <p style="text-align:left;">
+            Your wishlist is empty.<br> Add all your favorites to this Wish List.
+            <span style="float:right;">
+                <u>Shop What's New</u>
+            </span>
+        </p>
+            
+        <hr>
+        <h2>Personal Data</h2>
+                <p align="right"><u>Edit Personal Data</u></p>
+            
+        <hr>
+        <h2>Addresses</h2>    
+            <p>Enter an address for a quicker shopping experience</p> 
+            <p align="right"><u>Add an Address</u></p>
+            
+        <hr>
+        <h2>Payments</h2>
+            <p>Make checkout faster. Enter and manage credit cards.</p>
+            <p align="right"><u>Add a Credit Cart</u></p>
+            
+        <hr>
+        <h3>Ask our Customer Care</h3>
+        <h2>Please click here</h2>
+        <p>Customer Care:<br> 10:00AM - 6:00PM PST</p>
+    </div>
+
+    <!--End of main content-->
+
+    <!--start of footer-->
 
     <footer>
         <!-- This div is here to use flexbox to position these items -->
         <div class="links-copyright">
             <ul>
-                <li><a href="html/models.html">Models</a>
+                <li><a href="/html/models.html">Models</a>
                     <ul>
-                        <li><a href="html/nemesis.html">Nemesis</a></li>
-                        <li><a href="html/black-widow.html">Black Widow</a></li>
+                        <li><a href="/html/nemesis.html">Nemesis</a></li>
+                        <li><a href="/html/black-widow.html">Black Widow</a></li>
                     </ul>
                 </li>
-                <li><a href="html/config.html">Customize</a></li>
-                <li class="about"><a href="html/about.html">About</a></li>
-                <li><a href="html/merch.html">Merch Store</a></li>
+                <li><a href="/html/config.html">Customize</a></li>
+                <li class="about"><a href="/html/about.html">About</a></li>
+                <li><a href="/html/merch.html">Merch Store</a></li>
             </ul>
             <p>Copyright © Trion Supercars 2024</p>
         </div>
@@ -139,15 +176,14 @@
         <section>
             <h3>Social Media</h3>
             <ul>
-                <li><a href="https://www.facebook.com/richard.patterson.9041/" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/trionsupercarsgroup/" target="_blank"><img src="images/icons/instagram.png" alt="Facebook"></a></li>
-                <li><a href="https://x.com/trionsupercars" target="_blank"><img src="images/icons/twitter.png" alt="Facebook"></a></li>
-                <li><a href="https://www.youtube.com/@trionsupercars2629/featured" target="_blank"><img src="images/icons/youtube.png" alt="Facebook"></a></li>
+                <li><a href="https://www.facebook.com/richard.patterson.9041/" target="_blank"><img src="/images/icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/trionsupercarsgroup/" target="_blank"><img src="/images/icons/instagram.png" alt="Facebook"></a></li>
+                <li><a href="https://x.com/trionsupercars" target="_blank"><img src="/images/icons/twitter.png" alt="Facebook"></a></li>
+                <li><a href="https://www.youtube.com/@trionsupercars2629/featured" target="_blank"><img src="/images/icons/youtube.png" alt="Facebook"></a></li>
             </ul>    
         </section>
     </footer>
-    
-    <script src="js/navbar.js"></script>
+    <script src="/js/about.js"></script>
 
 </body>
 
