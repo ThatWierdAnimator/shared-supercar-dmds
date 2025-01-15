@@ -11,7 +11,7 @@ div.current-car {
 
 .menu {
     border-left: 3px solid var(--main);
-    width: 30%;
+    width: 40%;                                     
     padding: 0 30px;
 
     display: flex;
@@ -86,9 +86,10 @@ span img {
     color: var(--text);
     font-weight: var(--bold);
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 10px 25px;
     cursor: pointer;
+    margin: 0 10px;
 }
 
 .buttons button:hover {

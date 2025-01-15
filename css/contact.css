@@ -1,8 +1,6 @@
 main {
   display: flex;
   justify-content: center;
-
-  height: calc(100vh - 300px);
 }
 
 .car-img {
@@ -11,6 +9,9 @@ main {
   width: 40%;
   height: 600px;
   margin-right: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid var(--main);
 }
 
 main section {

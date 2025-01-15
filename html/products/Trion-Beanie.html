@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/models.css">
+    <link rel="stylesheet" href="/css/product.css">
     <link rel="icon" href="/images/icons/trion_icon.png">
-    <title>Models | TRION</title>
+    <title>SuperShirt | TRION</title>
 </head>
 <body>
     <nav>
@@ -45,30 +45,25 @@
             <a href="/html/account.html">Account<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
         </div>
     </nav>
-    
     <main>
-        <h1>Models</h1>
-        <section class="card-for-nemesis">
-                <img class="nem-pic" src="/images/Trion-Nemesis.png" alt="Nemesis-GT">
-                <div class="container-for-nemesis">
-                    <h2>Nemesis GT</h2>
-                    <p>9.0L Twin Turbocharged</p>
-                    <p>V8 Engine</p>
-                    <p>2,000 HP</p>
-                    <button class="button-for-nem">Customize</button>
-                </div>
-        </section>
-        <section class="card-for-black-widow">
-            <img class="bw-pic" src="/images/black-widow.png" alt="Black-Widow">
-            <div class="container-for-black-widow">
-                <h2>Black-Widow</h2>
-                <p>1,400 HP</p>
-                <p>All Electric</p>
-                <button class="button-for-bw">Customize</button>
+        <!-- Change the supershirt class on this div to the name of the product you are making a page for -->
+        <!-- Go into the product.css file and there are more instructions on how to change the image -->
+        <div class="Beanies"></div>
+        <section>
+            <!-- This h1 is the title of the product, the text below is a description of it -->
+            <h1>Trion Beanie</h1>
+            <p>
+                The warm Trion Aesthetic to keep your ears and head warm from all weathers.
+            </p>
+            <div class="button">
+                <button class="add">Add to Cart</button>
+                <button class="cart" onclick="location.href='/html/cart.html'"><img src="/images/icons/cart_icon.png" alt="cart" height="50px"></button>
             </div>
+            <h2>Specifications</h2>
+            <!-- Each lorem ipsum line is a stat for the product, the <br> tags a linebreaks between each stat -->
+            <p>Lorem ipsum dolor sit amet.<br>Lorem, ipsum dolor<br>Lorem ipsum dolor sit, amet consectetur adipisicing.<br>Lorem, ipsum.<br>Lorem ipsum dolor sit.<br>Lorem, ipsum dolor.</p>
         </section>
     </main>
-
     <footer>
         <!-- This div is here to use flexbox to position these items -->
         <div class="links-copyright">

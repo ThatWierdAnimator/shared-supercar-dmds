@@ -18,6 +18,9 @@ div.image {
 .supershirt {
     background-image: url(/images/merch/supershirt.jpg);
 }
+.Beanies{
+    background-image: url(/images/merch/beanie.png);
+}
 
 main section {
     width: 35%;
