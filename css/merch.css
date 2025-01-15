@@ -54,8 +54,8 @@ button:not(.active) {
 .product {
   background-size: cover;
   background-position: center;
-  height: 600px;
-  width: 500px;
+  height: 500px;
+  width: 300px;
   border-radius: 10px;
   cursor: pointer;
   margin: 10px 20px;
@@ -121,6 +121,7 @@ aside p {
   font-size: 1.25em;
 
   margin-top: 0;
+  text-align: center;
 }
 
 div.sections {
