@@ -11,7 +11,7 @@ div.current-car {
 
 .menu {
     border-left: 3px solid var(--main);
-    width: 40%;
+    width: 40%;                                     
     padding: 0 30px;
 
     display: flex;
