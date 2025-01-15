@@ -63,6 +63,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: var(--main-highlight);
+}
+
 .items {
     border: 1px solid var(--text);
 
@@ -95,11 +99,4 @@ button {
     padding-left: 50px;
     width: 50%;
     color: grey;
-}
-
-button:hover{
-    background-color: black;
-}
-section.details{
-    
 }
